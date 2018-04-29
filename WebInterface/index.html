@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Home Web Interface</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/interfacestyle.css">
+</head>
+
+<body>
+
+  <form>
+  <select name="users" onchange="retrieveTable(this.value)">
+    <option value="">Select data type:</option>
+    <option value="Climate">Inside Climate</option>
+    <option value="Movements">Recent Movements</option>
+    <option value="Gas">Gas Detections</option>
+    <option value="Checkins">Current Guests Checked in</option>
+    <option value="Guests">Permitted Guests</option>
+    </select>
+  </form>
+
+  <div id="home1">
+    <h1>Current home being tracked: <span id="home_name">None</span></h1>
+    <div id="Climate">
+      <h3>Climate</h3>
+
+      Outdoor temperature provided by Met office UK.
+      </div>
+<br>
+      <div id="Movements">
+        <h3>Recent Movements</h3>
+
+        </div>
+<br>
+        <div id="Gas">
+          <h3>Gas Detections</h3>
+
+          </div>
+<br>
+          <div id="Checkins">
+            <h3>Guest Check-ins</h3>
+
+            </div>
+<br>
+
+            <div id="movements">
+              <h2>Activity Monitor</h2>
+              Total movements detected today: <span id="total_movements_today">5</span><br>
+              Movements in bedroom before 11:55am <span id="total_movements_morning">2</span><br>
+              Movement in bedroom after 7:00pm: <span id="total_movements_night">1</span><br>
+              Most recent movement: <span id="total_movements_today">Kitchen (Oven Corner)</span>
+            </div>
+<br>
+            <div id="warnings">
+              <h2>Warnings</h2>
+              <ul>
+                <li><h3>Temperature at 03:42am dropped below 17C</h3></li>
+                <li><h3>No movement detected in bedroom on the morning of 23/04/2013</h3></li>
+                <li><h3>Gas detected at 12:23pm for the last 20 minutes</h3></li>
+            </div>
+<br>
+            <div id="Guests">
+              <h3>Permitted Guests</h3>
+              <table border>
+                <tr>
+                  <th>Name</th>
+                  <th>Relationship</th>
+                  <th>Restricted Access?</th>
+                  <th>Entry allowed from (time)</th>
+                  <th>Entry allowed until (time)</th>
+                </tr>
+                <tr align="center">
+                  <td>14/04/1994</td>
+                  <td>10:40</td>
+                  <td>Richard Marshall</td>
+                </tr>
+              </table>
+              </div>
+          <br>
+
+    </div>
+    <script src="javascript/dbretrieval.js"></script>
+
+  </body>
+  </html>

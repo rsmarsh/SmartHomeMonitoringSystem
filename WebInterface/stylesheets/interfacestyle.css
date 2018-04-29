@@ -1,0 +1,42 @@
+#home1 {
+
+  border: 2px solid red;
+      border-radius: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+
+#temperature_sensor {
+  border: 1px solid green;
+
+
+}
+
+#pir_sensor {
+
+border: 1px solid blue;
+}
+
+#gas_sensor {
+
+border: 1px solid orange;
+
+}
+
+#NFC_sensor {
+
+border: 1px solid pink;
+}
+
+#movements {
+
+border: 1px solid purple;
+}
+
+#warnings {
+border: 1px solid red;
+
+}
