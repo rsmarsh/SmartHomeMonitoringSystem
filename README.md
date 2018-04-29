@@ -14,7 +14,7 @@ Each of the following will be recorded by the sensors within the home:
  * Temperature and Humidity  
  * Harmful gasses  
  * Images which can capture the room when alarming events are detected, such as gas leaks
-  
+ 
 
 ## Operation
 Create the MySQL database using the schema on the host Raspberry Pi, and place the Web Interface files into a folder accessible by the Apache Server.  
